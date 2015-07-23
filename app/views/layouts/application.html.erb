@@ -7,6 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="sidebar">
+    <div id="logo">
+      <%= link_to root_path do %>
+        <%= image_tag "level_up_badge.png" %>
+      <% end %>
+    </div>
+
+    <ul>
+      <li class="category">Website</li>
+      <li><%= link_to "Blog", root_path %></li>
+      <li>About</li>
+    </ul>
+
+    <ul>
+      <li class="category">Social</li>
+      <li><a href="https://twitter.com/RossGHamilton">Twitter</li>
+      <li><a href="https://facebook.com/SlipperyJ">Facebook</li>
+      <li><a href="https://github.com/SlipperyJ">Github</li>
+      <li><a href="mailto:rosshamilton.dev@gmail.com">Email</li>
+    </ul>
+  </div>
 
 <%= yield %>
 
